@@ -1,0 +1,1121 @@
+2018-07-17 13:57:31 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message '您提交的数据无法被验证。' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/login', Array)
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#5 {main}
+2018-07-17 13:57:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'cE96Z0lUVTImPDwlFhIEADMrMV4sLSJePjofHRYdF1sKJyozMxdmfQ=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '0'
+    ]
+    'login-button' => ''
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '168'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Yii2-Rbac/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '50988'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1531807051.332
+    'REQUEST_TIME' => 1531807051
+]
+2018-07-20 14:52:02 [::1][-][5etflotl60duv5jqhn7605o220][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php:20
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\Program File...', 20, Array)
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Program File...')
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Program File...', Array)
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Program File...', Array, Object(backend\controllers\UserController))
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(15): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user', Array)
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2018-07-20 14:52:02 [::1][-][5etflotl60duv5jqhn7605o220][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5etflotl60duv5jqhn7605o220'
+    '_csrf' => 'e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/Yii2-Rbac/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=5etflotl60duv5jqhn7605o220; _csrf=e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '57731'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=user'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532069522.36
+    'REQUEST_TIME' => 1532069522
+]
+2018-07-20 14:54:24 [::1][-][5etflotl60duv5jqhn7605o220][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php:20
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\Program File...', 20, Array)
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Program File...')
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Program File...', Array)
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Program File...', Array, Object(backend\controllers\UserController))
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(15): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user', Array)
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2018-07-20 14:54:24 [::1][-][5etflotl60duv5jqhn7605o220][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5etflotl60duv5jqhn7605o220'
+    '_csrf' => 'e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/Yii2-Rbac/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=5etflotl60duv5jqhn7605o220; _csrf=e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '57808'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=user'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532069663.997
+    'REQUEST_TIME' => 1532069663
+]
+2018-07-20 14:54:39 [::1][-][5etflotl60duv5jqhn7605o220][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php:20
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\Program File...', 20, Array)
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Program File...')
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Program File...', Array)
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Program File...', Array, Object(backend\controllers\UserController))
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(15): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user', Array)
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2018-07-20 14:54:39 [::1][-][5etflotl60duv5jqhn7605o220][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5etflotl60duv5jqhn7605o220'
+    '_csrf' => 'e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/Yii2-Rbac/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=5etflotl60duv5jqhn7605o220; _csrf=e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '57818'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=user'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532069679.337
+    'REQUEST_TIME' => 1532069679
+]
+2018-07-20 14:55:43 [::1][-][5etflotl60duv5jqhn7605o220][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php:20
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\Program File...', 20, Array)
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Program File...')
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Program File...', Array)
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Program File...', Array, Object(backend\controllers\UserController))
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(15): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user', Array)
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2018-07-20 14:55:43 [::1][-][5etflotl60duv5jqhn7605o220][info][application] $_GET = [
+    'r' => 'user'
+    'list' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5etflotl60duv5jqhn7605o220'
+    '_csrf' => 'e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/Yii2-Rbac/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=5etflotl60duv5jqhn7605o220; _csrf=e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '57868'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user&list'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=user&list'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532069743.415
+    'REQUEST_TIME' => 1532069743
+]
+2018-07-20 14:55:47 [::1][-][5etflotl60duv5jqhn7605o220][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php:20
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\Program File...', 20, Array)
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Program File...')
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Program File...', Array)
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Program File...', Array, Object(backend\controllers\UserController))
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(15): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user', Array)
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2018-07-20 14:55:47 [::1][-][5etflotl60duv5jqhn7605o220][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5etflotl60duv5jqhn7605o220'
+    '_csrf' => 'e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/Yii2-Rbac/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=5etflotl60duv5jqhn7605o220; _csrf=e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '57869'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=user'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532069747.686
+    'REQUEST_TIME' => 1532069747
+]
+2018-07-20 15:33:46 [::1][-][5etflotl60duv5jqhn7605o220][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php:20
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\Program File...', 20, Array)
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Program File...')
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Program File...', Array)
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Program File...', Array, Object(backend\controllers\UserController))
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(15): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user', Array)
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2018-07-20 15:33:46 [::1][-][5etflotl60duv5jqhn7605o220][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5etflotl60duv5jqhn7605o220'
+    '_csrf' => 'e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/Yii2-Rbac/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=5etflotl60duv5jqhn7605o220; _csrf=e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '59220'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=user'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532072026.819
+    'REQUEST_TIME' => 1532072026
+]
+2018-07-20 15:34:29 [::1][-][5etflotl60duv5jqhn7605o220][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php:20
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\Program File...', 20, Array)
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Program File...')
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Program File...', Array)
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Program File...', Array, Object(backend\controllers\UserController))
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(15): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user', Array)
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2018-07-20 15:34:29 [::1][-][5etflotl60duv5jqhn7605o220][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5etflotl60duv5jqhn7605o220'
+    '_csrf' => 'e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/Yii2-Rbac/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=5etflotl60duv5jqhn7605o220; _csrf=e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '59241'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=user'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532072069.534
+    'REQUEST_TIME' => 1532072069
+]
+2018-07-20 15:34:31 [::1][-][5etflotl60duv5jqhn7605o220][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php:20
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\Program File...', 20, Array)
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Program File...')
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Program File...', Array)
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Program File...', Array, Object(backend\controllers\UserController))
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(15): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user', Array)
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2018-07-20 15:34:31 [::1][-][5etflotl60duv5jqhn7605o220][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5etflotl60duv5jqhn7605o220'
+    '_csrf' => 'e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/Yii2-Rbac/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=5etflotl60duv5jqhn7605o220; _csrf=e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '59242'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=user'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532072071.629
+    'REQUEST_TIME' => 1532072071
+]
+2018-07-20 15:34:33 [::1][-][5etflotl60duv5jqhn7605o220][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php:20
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\Program File...', 20, Array)
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Program File...')
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Program File...', Array)
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Program File...', Array, Object(backend\controllers\UserController))
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(15): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user', Array)
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2018-07-20 15:34:33 [::1][-][5etflotl60duv5jqhn7605o220][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5etflotl60duv5jqhn7605o220'
+    '_csrf' => 'e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/Yii2-Rbac/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=5etflotl60duv5jqhn7605o220; _csrf=e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '59243'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=user'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532072073.926
+    'REQUEST_TIME' => 1532072073
+]
+2018-07-20 15:34:35 [::1][-][5etflotl60duv5jqhn7605o220][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php:20
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\Program File...', 20, Array)
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Program File...')
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Program File...', Array)
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Program File...', Array, Object(backend\controllers\UserController))
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(15): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user', Array)
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2018-07-20 15:34:35 [::1][-][5etflotl60duv5jqhn7605o220][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5etflotl60duv5jqhn7605o220'
+    '_csrf' => 'e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/Yii2-Rbac/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=5etflotl60duv5jqhn7605o220; _csrf=e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '59248'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=user'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532072075.578
+    'REQUEST_TIME' => 1532072075
+]
+2018-07-20 15:34:36 [::1][-][5etflotl60duv5jqhn7605o220][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php:20
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\Program File...', 20, Array)
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Program File...')
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Program File...', Array)
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Program File...', Array, Object(backend\controllers\UserController))
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(15): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user', Array)
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2018-07-20 15:34:36 [::1][-][5etflotl60duv5jqhn7605o220][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5etflotl60duv5jqhn7605o220'
+    '_csrf' => 'e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/Yii2-Rbac/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=5etflotl60duv5jqhn7605o220; _csrf=e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '59249'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=user'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532072076.164
+    'REQUEST_TIME' => 1532072076
+]
+2018-07-20 15:34:36 [::1][-][5etflotl60duv5jqhn7605o220][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php:20
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\Program File...', 20, Array)
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Program File...')
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Program File...', Array)
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Program File...', Array, Object(backend\controllers\UserController))
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(15): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user', Array)
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2018-07-20 15:34:36 [::1][-][5etflotl60duv5jqhn7605o220][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5etflotl60duv5jqhn7605o220'
+    '_csrf' => 'e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/Yii2-Rbac/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=5etflotl60duv5jqhn7605o220; _csrf=e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '59250'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=user'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532072076.516
+    'REQUEST_TIME' => 1532072076
+]
+2018-07-20 15:34:36 [::1][-][5etflotl60duv5jqhn7605o220][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php:20
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\Program File...', 20, Array)
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Program File...')
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Program File...', Array)
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Program File...', Array, Object(backend\controllers\UserController))
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(15): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user', Array)
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2018-07-20 15:34:36 [::1][-][5etflotl60duv5jqhn7605o220][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5etflotl60duv5jqhn7605o220'
+    '_csrf' => 'e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/Yii2-Rbac/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=5etflotl60duv5jqhn7605o220; _csrf=e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '59251'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=user'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532072076.859
+    'REQUEST_TIME' => 1532072076
+]
+2018-07-20 15:37:57 [::1][-][5etflotl60duv5jqhn7605o220][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php:20
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\views\user\index.php(20): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\Program File...', 20, Array)
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Program File...')
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Program File...', Array)
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Program File...', Array, Object(backend\controllers\UserController))
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(15): yii\base\Controller->render('index')
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user', Array)
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2018-07-20 15:37:57 [::1][-][5etflotl60duv5jqhn7605o220][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5etflotl60duv5jqhn7605o220'
+    '_csrf' => 'e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/Yii2-Rbac/backend/web/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=5etflotl60duv5jqhn7605o220; _csrf=e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '59329'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=user'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532072277.615
+    'REQUEST_TIME' => 1532072277
+]
+2018-07-20 15:55:39 [::1][1][mirmvsqocbkf3p1a2omv7lg941][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'updated_at' doesn't have a default value' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\db\Command.php:784
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\db\Command.php(784): PDOStatement->execute()
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\db\Schema.php(448): yii\db\Command->execute()
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\db\BaseActiveRecord.php(593): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(66): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\UserController->actionCreate()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000]: General error: 1364 Field 'updated_at' doesn't have a default value
+The SQL being executed was: INSERT INTO `user` (`username`, `auth_key`, `email`, `created_at`, `password_hash`) VALUES ('test', 'CzJStK9vP09XqGiFeD98MCcHIbR8RFMX', 'test@qq.com', 1532073338, '$2y$13$KIflXnBPvdwV52/0sNOS.elWZFt5Of5cANA2UKQuyXa8tujD1Bboy')' in D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\db\Command.php(794): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\db\Schema.php(448): yii\db\Command->execute()
+#2 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\db\BaseActiveRecord.php(593): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\controllers\UserController.php(66): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\UserController->actionCreate()
+#7 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\Program Files\lamp\Apache\htdocs\Yii2-Rbac\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'updated_at' doesn't have a default value
+)
+
+2018-07-20 15:55:38 [::1][1][mirmvsqocbkf3p1a2omv7lg941][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_POST = [
+    '_csrf' => 'elFCZm5Ec2YLIypTATY1LyojLyENID4pAGUAUlx9BwQtZA0cWhM4EQ=='
+    'User' => [
+        'username' => 'test'
+        'auth_key' => '123456'
+        'email' => 'test@qq.com'
+    ]
+    'AuthItem' => [
+        'name' => '普通管理员'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw\";}'
+    'PHPSESSID' => 'mirmvsqocbkf3p1a2omv7lg941'
+    '_identity' => 'b3c293fdf074ffb42d104bc4dbeca5dabc79d4c46eef5c9fdee0e46051e19d6ca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"C5f5K1Kg8tL-IutYAom4-s7RMh_xMk_l\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/Yii2-Rbac/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '211'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Yii2-Rbac/backend/web/index.php?r=user%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => '_csrf=e20bd1709cee44c4890cf8533bf7c45d68bf332e56697c1130edfc4d71f6efcfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qrh5orFIPrmGcdMOz4B429tbW5Oz4WKw%22%3B%7D; PHPSESSID=mirmvsqocbkf3p1a2omv7lg941; _identity=b3c293fdf074ffb42d104bc4dbeca5dabc79d4c46eef5c9fdee0e46051e19d6ca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22C5f5K1Kg8tL-IutYAom4-s7RMh_xMk_l%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\lamp\\php;C:\\ProgramData\\Oracle\\Java\\javapath;E:\\Program Files\\mysql-5.6.24-win32;E:\\Program Files\\apache-tomcat-6.0.44\\bin;E:\\Program Files\\java\\jdk6\\bin;E:\\Program Files\\java\\jdk6\\jre\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;C:\\Program Files\\Condusiv Technologies\\ExpressCache\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;d:\\Program Files\\OpenVPN\\bin;D:\\Program Files\\TortoiseSVN\\bin;C:\\strawberry\\c\\bin;C:\\strawberry\\perl\\bin;D:\\Program Files\\lamp\\mysql\\bin;d:\\Program Files (x86)\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Program Files/lamp/Apache/htdocs'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/Program Files/lamp/Apache/htdocs/Yii2-Rbac/backend/web/index.php'
+    'REMOTE_PORT' => '59949'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/Yii2-Rbac/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/Yii2-Rbac/backend/web/index.php'
+    'PHP_SELF' => '/Yii2-Rbac/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532073338.221
+    'REQUEST_TIME' => 1532073338
+]
